@@ -1,0 +1,46 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightgray
+}
+
+
+.btn {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  background-color: #EBA83A;
+  color: white;
+  border-radius: 10px;
+}
+
+.reviews-card {
+  background-color: #BB371A;
+  color: white;
+  border-radius: 10px;
+
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

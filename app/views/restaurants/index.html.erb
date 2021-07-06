@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="navbar">
+    <h1 class="my-5">Restaurant List 🍽</h1>
+    <button type="button" class="btn btn-primary ">
+    <%= link_to "Add a new restaurant", new_restaurant_path %>
+    </button>
+  </div>
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
+      <div class="cards col-6 col-lg-4">
+        <%= link_to restaurant_path(restaurant) do %>
+          <div class="card shadow p-3 mb-3">
+            <h3 class="mb-3"><%= restaurant.name %></h3>
+            <p>📍<%= restaurant.address %></p>
+            <p>📞<%= restaurant.phone_number %></p>
+            <p><%= restaurant.category %></p>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
