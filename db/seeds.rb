@@ -18,7 +18,7 @@ end
 
 50.times do
   Review.create(
-    rating: rand(0..5),
+    rating: rand(1..5),
     restaurant_id: rand(0..50),
     content: ["wonderful", "Awesome", "Tasty", "Bad"].sample
   )

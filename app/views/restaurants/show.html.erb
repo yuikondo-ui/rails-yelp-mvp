@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="my-5">
+  <div class="mt-5">
     <h1 ><%= @restaurant.name %></h1>
     <p><%= @restaurant.address %></p>
   </div>
@@ -12,9 +12,12 @@
           <h3 ><%= review.content %></h3>
           <p><%= '⭐️ ' * review.rating %></p>
         </div>
-      <% end %>
       </div>
+      <% end %>
     </div>
+      <button type="button" class="btn btn-primary btn-red">
+      <%= link_to "Add a new review", new_restaurant_review_path(@restaurant) %>
+      </button>
   </div>
 
   <%= link_to "Back", restaurants_path %>

@@ -18,12 +18,21 @@ a{
 }
 
 a:hover {
-  color: lightgray
+  color: white;
 }
 
 
-.btn {
+.btn-red {
+  background-color: #BB371B;
   text-decoration: none;
+  color: white;
+  border-color: #BB371B;
+  border-radius: 3px;
+}
+
+.btn-red:hover {
+  background-color: rgb(211, 61, 31);
+  border-color: rgb(211, 61, 31);
   color: white;
 }
 
@@ -34,11 +43,12 @@ a:hover {
 }
 
 .reviews-card {
-  background-color: #BB371A;
-  color: white;
+  background-color: white;
+  border-color: lightslategray;
+  color: black;
   border-radius: 10px;
-
 }
+
 .navbar {
   display: flex;
   align-items: center;
